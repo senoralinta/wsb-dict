@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSB Dict</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">WSB-Dict</div>
+    <div class="search-container">
+        <input type="text" placeholder="search topics..." id="search-bar">
+    </div>
+    <div class="auth-links">
+        <span>login</span>
+        <span>register</span>
+    </div>
+</header>
+
+<div class="main-container">
+    <aside class="sidebar">
+    <h2 class="sidebar-title">trending</h2>
+    <ul class="topic-list">
+        <li>#software-development</li>
+        <li>#javascript-tips</li>
+        <li>#web-design-2026</li>
+        <li>#life-on-mars</li>
+    </ul>
+
+    <h2 class="sidebar-title" style="margin-top: 30px;">channels</h2>
+    <ul class="topic-list">
+        <li>#politics</li>
+        <li>#sports</li>
+        <li>#gaming</li>
+        <li>#cinema</li>
+    </ul>
+</aside>
+
+    <main class="content">
+        <h1 class="topic-title">software development</h1>
+        <article class="entry">
+            <p class="entry-text">This is our first entry! Welcome to the clone project.</p>
+            <div class="entry-footer">
+                <span class="author">user123</span> - <span class="date">07.01.2026</span>
+            </div>
+        </article>
+        <section class="create-entry">
+    <textarea id="new-entry-text" placeholder="share your thoughts on this topic..."></textarea>
+    <div class="form-actions">
+        <button id="submit-btn">send</button>
+    </div>
+</section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
