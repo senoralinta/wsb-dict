@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>WSB-Dict — Mini Eksisozluk</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>WSB-Dict</h1>
+    <div id="authArea">
+      <span id="userInfo">Not logged in</span>
+      <button id="showLoginBtn" class="btn">Login</button>
+      <button id="showRegisterBtn" class="btn">Register</button>
+      <button id="logoutBtn" class="btn" style="display:none;">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="topicsSection">
+        <section id="topics" class="card">
+        <h2>Topics</h2>
+        <div id="topicsList"></div>
+        </section>
+    </section>
+    <section id="createTopic">
+      <div id="createTopicArea" class="card">
+        <h2>Create topic</h2>
+        <input id="newTitle" placeholder="Topic title" class="input"/>
+        <input id="newTags" placeholder="tags comma separated (optional)" class="input"/>
+        <button id="createTopicBtn" class="btn primary">Create</button>
+      </div>
+    
+    </section>
+    
+    <section id="topicView" class="card" style="display:none;">
+      <button id="backBtn" class="btn">Back</button>
+      <h2 id="topicTitle"></h2>
+      <div id="topicTags" class="tags"></div>
+      <div id="postsList"></div>
+
+      <div id="newPostArea" class="card">
+        <h3>Add post</h3>
+        <textarea id="newPostContent" rows="4" cols="50" class="input"></textarea><br/>
+        <button id="createPostBtn" class="btn primary">Post</button>
+      </div>
+    </section>
+
+    <section>
+      <div id="searchArea" class="card">
+        <input id="searchInput" placeholder="Search topics/posts" class="input" />
+        <button id="searchBtn" class="btn">Search</button>
+      </div>
+    </section>
+
+
+  </main>
+
+  <aside id="loginPanel" class="panel" style="display:none;">
+    <h3>Login</h3>
+    <input id="loginUser" placeholder="username" class="input" /><br/>
+    <input id="loginPass" placeholder="password" type="password" class="input" /><br/>
+    <button id="loginBtn" class="btn primary">Login</button>
+    <button id="closeLogin" class="btn">Close</button>
+  </aside>
+
+  <aside id="registerPanel" class="panel" style="display:none;">
+    <h3>Register</h3>
+    <input id="regUser" placeholder="username" class="input" /><br/>
+    <input id="regPass" placeholder="password" type="password" class="input" /><br/>
+    <button id="registerBtn" class="btn primary">Register</button>
+    <button id="closeRegister" class="btn">Close</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
